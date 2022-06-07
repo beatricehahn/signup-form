@@ -4,48 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="signupform.css">
     <title>Sign Up Now</title>
 </head>
 <body>
-    <div id="signup-box">
-        <div id="background">
-            <img id ="controller-img" src="controller.jpg" alt="A game controller hovers over a man's hand ">
-            <p id="photocredit">Photo by Nikita Kachanovsky on Unsplash</p>
+    <div class="content">
+        <div class="picture">
+            <div class="photo-credit">
+                <p>Photo by <a href="https://unsplash.com/@tizell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas Ortiz</a> on <a href="https://unsplash.com/">Unsplash</a> </p>
+            </div>
         </div>
-        <div id="signup-content">
-            <p id="signup-heading-blurb">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+        <div class="right">
+            <div class="head-blurb left">
+                <p>Enjoy gaming? Get paid to play and review pre-release games!</p>
+                <p>Sign up <em>now</em> to get started.</p>
+            </div>
+            <form action="#" method="post">
+                <div class="form left">
+                    <p class="form-title">Answer your call.</p>
 
-            <div id="signup-form-container">
-                <form action="example.com/path" method="post">
-                    <fieldset>
-                        <legend>Let's do this!</legend>
-
+                    <div class="form-input">
                         <label for="firstname">FIRST NAME</label>
                         <input type="text" id="firstname" name="firstname" required>
+                    </div>
 
+                    <div class="form-input">
                         <label for="lastname">LAST NAME</label>
                         <input type="text" id="lastname" name="lastname" required>
+                    </div>
 
+                    <div class="form-input">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" name="email" required>
+                    </div>
 
+                    <div class="form-input">
                         <label for="phone">PHONE NUMBER </label>
                         <input type="tel" id="phone" name="phone"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             required>
+                    </div>
 
+                    <div class="form-input">
                         <label for="password">PASSWORD</label>
                         <input type="password" id="password" name="password" required>
+                    </div>
 
+                    <div class="form-input">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
                         <input type="password" id="confirm-password" name="confirm-password" required>
-                    </fieldset>
-                </form>
-            </div>
-
-            <button id="signup-btn">Create Account</button>
-            <p>Already have an account? Log in</p>
+                    </div>
+                </div>
+            </form>
+            <div class="left button"><button id="signup-btn" type="submit">Create Account</button></div>
+            <div class="login left"><p>Already have an account? </p><a class="login-link" href="#">Log in</a></div>
         </div>
     </div>
 </body>
